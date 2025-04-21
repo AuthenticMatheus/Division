@@ -1,0 +1,651 @@
+
+* {
+  max-width: 110%;
+  box-sizing: border-box;
+  
+}
+
+
+:root {
+    --primary-color: #FF8C00; /* Dark Orange */
+    --secondary-color: #1a1a1a; /* Almost Black */
+    --accent-color: #FF4500; /* Orange Red */
+    --bg-color: #F5F5F5; /* Light Gray */
+    --text-color: #333;
+    --white: #FFFFFF;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    
+  }
+
+  body {
+    margin: 0;
+    font-family: Untitled Sans, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Open Sans, Helvetica Neue, sans-serif;
+    background: black  linear-gradient(0deg,rgba(216,236,248,.06),rgba(152,192,239,.06));
+    font-size: max(calc(var(--_size) * 0.03), 10px);
+    --_factor: min(600px, 80vh);
+    --_size: min(var(--_factor), 80vw);
+}
+  
+  header {
+    background-color: var(--secondary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 16px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 99;
+  }
+
+
+ header nav {
+    background-color:linear-gradient(0deg,rgba(216,236,248,.06),rgba(152,192,239,.06))
+  }
+  
+  header nav ul {
+    list-style-type: none; /* Remove os marcadores de lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Flexbox para dispor os itens lado a lado */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+  }
+  
+  header nav ul li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+  }
+  
+  header  nav ul li a {
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    font-size: 20px; /* Tamanho da fonte */
+    padding: 5px 10px; /* Espaçamento interno dos links */
+    display: block; /* Faz o link ocupar toda a área do li */
+  }
+  
+  header nav ul li a:hover {
+    background-color: #575757; /* Cor de fundo ao passar o mouse */
+    border-radius: 5px; /* Borda arredondada ao passar o mouse */
+  }
+  
+
+
+
+
+  .Logo img {
+    width: 250px; 
+    height: 80px;
+  }
+
+  .Logo {
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .container-c {
+    margin: 0 auto;
+    padding: 2em;
+    max-width: 1200px;
+    box-sizing: border-box;
+  }
+  
+  /* Removemos o margin-left fixo */
+  .container {
+    padding-left: 0;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+  }
+  
+  /* Estilo do carousel */
+  .carousel {
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 2em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 100%; /* ocupa toda a largura */
+  }
+  
+  /* Área interna do slide */
+  .carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Cada slide ocupa toda a largura */
+  .carousel-item {
+    flex: 0 0 100%;
+  } 
+  
+  /* Imagem preenche o slide */
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+  } 
+  
+  /* Botões de controle */
+  .carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: var(--white);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0.5em;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    z-index: 10;
+  }
+  
+  .carousel-control:hover {
+    background-color: var(--primary-color);
+  }
+  
+  .carousel-control.prev {
+    left: 10px;
+  }
+  
+  .carousel-control.next {
+    right: 10px;
+  }
+  
+  .search-filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  
+  .search-input {
+    flex-grow: 1;
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+  }
+  
+  .filter-select {
+    padding: 0.5em;
+    font-size: 1em;
+    border: 1px solid var(--secondary-color);
+    border-radius: 5px;
+    margin-left: 1em;
+    background-color: var(--white);
+    color: var(--secondary-color);
+  }
+  
+  .main-content {
+    width: 80%; /* ajuste a largura da coluna direita */
+    float: right;
+  }
+  .sidebar {
+    position: fixed;
+    top: 90px;
+    left: 0;
+    width: 220px; /* Defina a largura da sidebar */
+    height: 40vh;
+    padding: 20px;
+    float: left;
+    z-index: 1;
+    background-color: transparent;
+    color: var(--white);
+    border-radius: 10px;
+    
+}
+
+.sidebar2 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 220px;
+    padding: 20px;
+    z-index: 1;
+    background-color: transparent;
+    color: var(--white);
+    border-radius: 10px;
+    margin-top: 560px;
+    
+}
+.filter-box {
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid var(--accent-color);
+    width: 200px;
+} 
+ 
+.filter-box h3 {
+    color: var(--accent-color);
+    margin-top: 0;
+}
+
+  .checkbox-group ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .checkbox-group li {
+    margin-bottom: 10px;
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .checkbox-group label {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .checkbox-group input[type="checkbox"] {
+    margin-right: 10px;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff6600;
+    border-radius: 4px;
+    outline: none;
+    cursor: pointer;
+  }
+  .checkbox-group input[type="checkbox"]:checked {
+    background-color: #ff6600;
+    position: relative;
+  }
+  .checkbox-group input[type="checkbox"]:checked::after {
+    content: '✔';
+    position: absolute;
+    color: #1a1a1a;
+    font-size: 12px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  } 
+  .checkbox-group label {
+    transition: all 0.3s ease;
+  }
+/*cards*/
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 60px 10px 0px 0px;
+    width: 250px;
+    height: 450px;
+    padding: 10px;
+    background: #ffffff;
+    border: 1px solid #252525;
+    position: relative;
+  }
+
+
+.card:hover {
+  transform: translateY(-8px); /* faz o card subir um pouco */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* sombra mais intensa */
+}
+
+
+/* Animação da borda 
+@keyframes borderAnimation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+*/
+
+
+
+
+.produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 0,01em;
+  margin-left: 0;
+}
+
+
+
+
+.card-img {
+  background-color: black;
+  height: 50%;
+  width: 100%;
+  border-radius:.5rem;
+  transition:.3s ease;
+  overflow: hidden;
+  position: relative;
+}
+
+.card-img img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.card-info {
+  padding: 16px;
+  text-align: center;
+}
+
+.card-info .text-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.card-info .text-body {
+  font-size: 0.95rem;
+  color: #555;
+}
+.card-body {
+  flex-grow: 1;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: 0 10px;
+}
+.card-footer {
+  padding: 16px 0 0;
+  border-top: 1px solid #eee;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-footer .text-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+.card-body p {
+  max-width: 100%;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  text-align: center;
+  padding: 0 10px;
+  font-size: 0.9rem;
+  line-height: 1.2em;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* reduzido pra caber melhor */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+
+
+
+/* fim card*/
+
+/* botão */
+
+.card-button {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 0.7em 1.2em;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-weight: 500;
+}
+
+.card-button {
+  background-color: #25D366;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.card-button:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.05); /* Dá uma "esticada" suave */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra legal */
+}
+
+.card-button:active {
+  transform: scale(0.95);
+}
+
+/* fim do botão */
+ 
+/*footer*/
+footer {
+  display: flex;
+  background-color: var(--secondary-color);
+  color: #fff;
+  height: 15vh;
+  bottom: 0 ;
+  position: relative;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+margin-top: 10px;
+}
+
+main p {
+  font-size: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.Max img {
+  height: 60%;
+  width: 60%;
+  margin-left: 50px;
+}
+
+
+
+a {
+  text-decoration: none;
+}
+
+
+
+nav {
+  display: inline-block;
+  text-align: center;
+  margin: 5px;
+  font-size: 20px;
+  padding-left: 2em;
+}
+
+.whats:active{
+  transform: scale(0.95);
+}
+
+
+/* Esconde o menu toggle no desktop */
+.menu-toggle {
+  display: none;
+}
+
+.side-menu {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 220px;
+  height: 100%;
+  background-color: #111;
+  color: white;
+  padding-top: 60px;
+  transition: left 0.3s ease;
+  z-index: 999;
+}
+
+.side-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.side-menu ul li {
+  padding: 15px;
+  border-bottom: 1px solid #333;
+}
+
+.side-menu ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 600px) {
+
+  * {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+
+  body {
+      font-size: 14px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center; /* Centraliza a logo horizontalmente */
+    align-items: center; /* Centraliza a logo verticalmente */
+    height: 100px; /* Ajuste a altura conforme necessário */
+}
+
+
+  
+
+  .logo img {
+    display: block; /* Garante que a imagem seja tratada como um bloco */
+    margin: 230px; /* Centraliza a logo horizontalmente */
+    padding: 30px; /* Remove o padding, ou ajuste conforme necessário */
+    width: 250px;
+    height: 120px;
+  }
+
+
+  footer {
+    position: static;
+    width: 100%;
+  }
+
+
+
+  fieldset {
+      margin: 1px;
+  }
+
+
+  .card {
+    width: 100%; /* O card vai ocupar toda a largura disponível */
+    margin: 4px;
+    width: 162px;
+    height: 380px; 
+    margin-left: 0;
+    }
+  
+   
+  
+  .sidebar, .sidebar2 {
+    display: none;
+  }
+  
+  .button_pr {
+    top: 70%;
+      left: 25%;
+  }
+  
+  .produtos{
+    justify-content: end;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+
+.card-info .text-body{
+  display: none;
+  
+}
+
+.container,
+  .container-c {
+    margin: 0;
+    padding: 1em;
+    
+  }
+
+  .carousel {
+    margin: 2em auto;
+    width: 100%;
+    margin-top: 0px;
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 12px;
+    font-size: 28px;
+    color: white;
+    background-color: #f0ad00;
+    padding: 8px 14px;
+    border-radius: 8px;
+    z-index: 1001;
+  }
+.side-menu{
+ margin-left: 0px;
+ height: 100%;
+ margin-top: 0px;
+ font-size: 1em;
+}
+
+
+footer p{
+  font-size: 0.8em;
+  
+}
+
+header nav {
+  display: none;
+}
+
+}
