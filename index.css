@@ -67,6 +67,7 @@ body {
 
 .nav-links a:hover {
  color: orangered;
+ 
 }
 
 .nav-links li {
@@ -86,11 +87,42 @@ transition: color 0.5s ease;
 }
 
 .nav-item:hover {
-background-color: rgb(126, 123, 123);
+background-color: white (126, 123, 123);
 border-radius: 8px;
 transition: color 1s ease,
 background color 1s ease;
 }
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+  position: relative;
+}
+ul li a {
+  display: block;
+  padding: 20px 25px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+
+}
+ul li a .dropdown li {
+  width: 100%;
+position: absolute;
+display: none;
+z-index: 999;
+}
+ul li:hover {
+  background: orange;
+}
+ul li:hover ul.dropdown{
+  display: block;
+}
+
+
 
 .slider {
   width: 100%;
@@ -173,7 +205,7 @@ figure{
 
 main h1 {
   color: white;
-  background-color: orangered;
+  background-color: black;
   text-align: center;
   height: 50px;
   justify-content: center;
@@ -192,7 +224,7 @@ main h1 {
 
 .card {
   border: 1px solid #ccc;
-  border-radius: 8px;
+  
   padding: 10px;
   width: 300px;
   margin-left: 50px;
@@ -236,24 +268,24 @@ main h1 {
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* sombra mais intensa */
 }
 
-.novidades {
-  text-align: center;
-  margin: 20px 0;
- 
-}
 
-.novidades img {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  margin: 0 auto;
-}
-.novidades h2{
-  background-color: black;
-  color: white;
-  padding: 50px;
-  
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .Whats { position: fixed; bottom: 10px; right: 6px; z-index: 9999; }
@@ -300,59 +332,66 @@ main h1 {
   text-align: center;
   bottom: 0;
   background-color: black;
-  height: 20px;
+  height: 100%;
   text-align:center;
+  gap: 20px;
   padding: 50px;
-  z-index: 9999;
-  width: 100%;
-
+   
   }
- 
-  @media only screen and (max-width: 600px) {
-    .menu-toggle {
-      display: block;
-      position: absolute;
-      top: 20px;
-      left: 12px;
-      font-size: 30px;
-      color: white;
-      border-radius: 8px;
-      z-index: 1001;
-    }
-    
-  .side-menu{
-   margin-left: 0px;
-   height: 100%;
-   margin-top: 0px;
-   font-size: 1em;
+
+  .social img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    gap: 100px;
   
   }
 
-.logo {
-  text-align: center;
-}
-
-
-.nav-links {
-  display: none;
-}
-
-.navbar {
-  position: relative; /* Necessário para que o absolute funcione */
+  .social img:hover {
+    transform: scale(1.2); transition: 0.3s;
+  }
  
-}
+  
 
 
-.cards-container {
-  margin-left: 50;
-  margin-right: 50px;
-}
+  .posts{
 
-.slider {
-  width: 100%;
-  height:300px;
-  overflow: hidden;
-}
+    text-align: center;
+  }
+  
+  .posts-grid {
+    display: grid;
+    gap: 10px;
+    
+  }
+  
+  .post-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
 
- }
+
+  }
+  
+  .post-item img {
+    justify-content: center;
+    display: inline-block;
+    height: 250px;
+    width: 250px;
+    margin: 1px;
+    
+  }
+
+  .seta img {
+    height: 90px;
+    width: 90px;
+    margin-bottom: 10px;
+  }
+
+  .seta p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    font-family: "Anton", sans-serif;
+  }
+  
   
