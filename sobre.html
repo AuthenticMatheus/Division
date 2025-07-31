@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./media.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo"><img src="./IMG/logo.png" alt=""></div>
+        <ul class="nav-links">
+          <li><a href="https://youtube.com" class="nav-item">INICIO</a></li>
+          <li><a href="./sobre.html" class="nav-item">SOBRE</a></li>
+          <li>
+            <a href="#" class="nav-item">PRODUTOS</a> 
+            <ul class="dropdown">
+              <li><a href="#">MOUSES</a></li>
+              <li><a href="#">TECLADOS</a></li>
+              <li><a href="#">HEADSETS</a></li>
+              <li><a href="#">MONITORES</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+
+
+
+
+
+
+    <!-- Menu hamburger -->
+<div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+
+<!-- Menu lateral -->
+<nav class="side-menu" id="sideMenu">
+  <ul>
+    <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSfPhZtsT76pY976Cb4bmfqR8Bwk10s42_U6gQxnXweyy1cx0A/viewform"> FORMULARIO DE PEDIDO </a></li>
+    <li><a href="./sobre.html"> SOBRE NÓS</a></li>
+    <li><a href=".">PRODUTOS</a> </li>
+    <li><a href=""></a>CONTATO</li>
+  </ul>
+</nav>
+<script>
+  const menu = document.getElementById("sideMenu");
+  const toggle = document.querySelector(".menu-toggle");
+
+  // Abre/fecha ao clicar no ícone
+  toggle.addEventListener("click", function (e) {
+    e.stopPropagation(); // Impede que o clique feche o menu imediatamente
+    if (menu.style.left === "0px") {
+      menu.style.left = "-250px";
+    } else {
+      menu.style.left = "0px";
+    }
+  });
+
+  // Fecha ao clicar fora do menu e do ícone
+  document.addEventListener("click", function (e) {
+    if (!menu.contains(e.target) && !toggle.contains(e.target)) {
+      menu.style.left = "-250px";
+    }
+  });
+</script>
+    
+    <div class="sobre">
+    <h1> SOBRE A DIVISION</h1>
+    <img src="./IMG/logosemfundo.png" alt=""> </img>
+    <p>Eu e meu irmão trabalhamos juntos com assistência técnica e venda de produtos de informática.
+    <br> A gente preza por um atendimento direto, rápido e sem enrolação, sempre buscando entregar soluções que funcionam de verdade. 
+    <br> Tudo com aquele cuidado que a gente gostaria de receber também.</p></div>
+
+
+
+
+    <footer>
+
+
+        <div class="seta">
+          <a href="index.html"><img src="./IMG/seta.png" alt=""></a>
+          <p> DE VOLTA AO TOPO </p>
+          </div>
+          
+      
+      
+      
+      <div class="Whats">
+          <a href="https://wa.me/5519978193361?text=Ol%C3%A1%2C%20vim%20pelo%20site%21" target="_blank">
+          <img src="https://static.vecteezy.com/system/resources/previews/016/716/468/original/whatsapp-icon-free-png.png" width="60" alt="Fale conosco pelo Whatsapp" title="Fale conosco pelo Whatsapp"> 
+       </a> 
+      </div>
+      
+      
+      
+      <div class="social">
+      <img src="./IMG/insta.svg.svg" alt="">
+      <img src="./IMG/face.svg.svg" alt="">
+      
+      </div>
+      
+      &copy; 2025 - Todos os direitos reservados.
+      
+      </footer>
+    
+</body>
+
+
+</html>

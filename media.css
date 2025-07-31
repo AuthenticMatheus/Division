@@ -22,19 +22,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-  
-
 .logo {
   text-align: center;
 }
@@ -68,4 +55,37 @@ padding: 10px;
 font-family: "Anton", sans-serif;
 }
 
- }
+
+
+
+
+
+
+
+
+
+
+
+/* SOBREEEEEEEEEEEE */
+
+.sobre {
+  height: 400px;
+}
+
+.sobre img{
+  height: 100px;
+  width: 100px;
+  margin-left: 122px;
+}
+
+
+
+
+
+
+
+
+
+
+
+} 
