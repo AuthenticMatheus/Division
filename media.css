@@ -37,17 +37,25 @@
 }
 
 
-.cards-container {
-  margin-left: 50;
-  margin-right: 50px;
-  gap: 1px;
-}
+
 
 .slider {
-  width: 100%;
-  height:300px;
-  overflow: hidden;
+ display: none;
 }
+
+
+.slider2{
+  width: 100%;
+  height:400px;
+  overflow: hidden;
+  overflow: hidden;
+  display: block;
+}
+
+
+
+
+
 
 .novidades h1{
 font-size: 26px;
@@ -55,9 +63,21 @@ padding: 10px;
 font-family: "Anton", sans-serif;
 }
 
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* espaçamento entre cards */
+  padding:10px;
+  margin: 0;
+}
 
 
 
+main h1{
+  font-size: 27px;
+  font-family: "Anton";
+}
 
 
 
@@ -79,7 +99,12 @@ font-family: "Anton", sans-serif;
 }
 
 
+.trampo img{
+  height: 300px;
+  width: 300px;
+  margin-left: 30px;
 
+}
 
 
 

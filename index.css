@@ -232,6 +232,36 @@ figure{
   }
 }
 
+
+
+
+.slider2{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 main h1 {
   color: white;
   background-color: black;
@@ -245,24 +275,24 @@ main h1 {
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* espaçamento entre cards */
-  padding:10px;
+  justify-content: flex-start; /* <- AGORA ALINHA À ESQUERDA */
+  gap: 20px;
+  padding: 10px;;
+  margin-left: 150px;
 }
 
 
 .card {
   border: 1px solid #ccc;
-  
   padding: 10px;
   width: 300px;
-  margin-left: 50px;
   display: inline-block;
   text-align: center;
   background-color: #f9f9f9;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   margin-top: 30px;
   margin-bottom: 30px;
+
 }
 
 .card img {
@@ -431,3 +461,22 @@ main h1 {
   margin-left: 690px;
  }
 
+.trampo img {
+ height: 400px;
+ width: 400px;
+ margin: 20px;
+ margin-top: px;
+ margin-bottom: 20px;
+ z-index: 999;
+ 
+}
+
+.trampo {
+  background-color: #333;
+  z-index: 999;
+}
+.trampo h1 {
+  font-family: "Anton";
+  color: white;
+  background-color: #333;
+}
