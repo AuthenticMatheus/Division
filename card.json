@@ -3,7 +3,6 @@
   "imagem": "https://images.tcdn.com.br/img/img_prod/948834/fone_de_ouvido_bluetooth_5_0_altomex_a_981_3205_1_91b64038016c1e49adf02d2c3aac089b.jpg",
   "descricao": "Leve e compacto; Ideal para o dia a dia; Duração média de 3hrs",
   "preco": "R$30,00",
-  "link": "https://mpago.la/28ckAqy",
   "filtro": "Fone",
   "unidades": "2 unidades disp"
   
@@ -14,8 +13,8 @@
   "imagem": "https://cdn.awsli.com.br/300x300/1599/1599357/produto/60404581/8126d69588.jpg",
   "descricao": "Conexão rápida e design confortável. Duração média de 3hrs",
   "preco": "R$30,00",
-  "link": "https://mpago.la/1q8yoKy",
-  "filtro": "Fone"
+  "filtro": "Fone",
+  "unidades": "1 unidades disp"
 },
 
 {
@@ -23,8 +22,8 @@
   "imagem": "https://th.bing.com/th/id/OIP.Mk3k8r8EdtM8NHLKvQ9ZxQHaHa?rs=1&pid=ImgDetMain",
   "descricao": "Design moderno e conexão sem fio. Perfeito para quem busca estilo e qualidade.",
   "preco": "R$35,00",
-  "link": "https://mpago.la/2zAyzn3",
-  "filtro": "Fone"
+  "filtro": "Fone",
+  "unidades": "2 unidades disp"
 },
 
 {
@@ -32,8 +31,8 @@
   "imagem": "https://th.bing.com/th/id/OIP.iV73nKWF--UHrCEFEdm5tQHaHa?w=1001&h=1001&rs=1&pid=ImgDetMain",
   "descricao": "Design moderno e conexão sem fio. Perfeito para quem busca estilo e qualidade.",
   "preco": "R$35,00",
-  "link": "https://mpago.la/2zAyzn3",
-  "filtro": "Fone"
+  "filtro": "Fone",
+  "unidades": "2 unidades disp"
 },
 
 
@@ -42,8 +41,8 @@
   "imagem": "https://http2.mlstatic.com/D_NQ_NP_678102-MLB45414003472_042021-F.jpg",
   "descricao": "Compatível com celulares Android e iPhones 15 em diante.",
   "preco": "R$20,00",
-  "link": "https://mpago.la/2tm4AwH",
-  "filtro": "Carregador"
+  "filtro": "Carregador",
+  "unidades": "5 unidades disp"
 },
 
 {
@@ -51,17 +50,17 @@
   "imagem": "https://item-shopping.c.yimg.jp/i/n/succul_scl-dcout-usb-microusb-80lbk",
   "descricao": "Para dispositivos antigos com entrada Micro USB. ",
   "preco": "R$10,00",
-  "link": "https://mpago.la/2D6tfiv",
-  "filtro": "Carregador"
+  "filtro": "Carregador",
+  "unidades": "4 unidades disp"
 },
 
 {
   "nome": "Cabo Tipo Micro USB Inova",
-  "imagem": "https://www.soseletronicos.com.br/produtos/20230706_100431_kv-201xx.jpg",
+  "imagem": "https://www.soseletronicos.com.br/produtos/20231219_135407_cbo-20295.jpg",
   "descricao": "Para dispositivos com entrada Micro USB.",
   "preco": "R$15,00",
-  "link": "https://mpago.la/2QZ6Xn5",
-  "filtro": "Carregador"
+  "filtro": "Carregador",
+  "unidades": "3 unidades disp"
 },
 
 {
@@ -69,17 +68,17 @@
   "imagem": "https://http2.mlstatic.com/D_Q_NP_813952-MLU77379249665_072024-O.webp",
   "descricao": "Som claro e confortável, com design ergonômico e cabo resistente.",
   "preco": "R$9,00",
-  "link": "https://mpago.la/1Yp4RU1",
-  "filtro": "Fone"
+  "filtro": "Fone",
+  "unidades": "5 unidades disp"
 },
 
 {
   "nome": "Fone de ouvido com fio - Inova 12007",
-  "imagem": "/IMGS/Fone.bg.png",
+  "imagem": "https://cdn.awsli.com.br/2500x2500/1881/1881203/produto/2598607679557d43fc4.jpg",
   "descricao": "Som nítido e Perfeito para ouvir música o dia todo.",
   "preco": "R$9,00",
-  "link": "https://mpago.la/1Yp4RU1",
-  "filtro": "Fone"
+  "filtro": "Fone",
+  "unidades": "5 unidades disp"
 },
 
 {
@@ -87,40 +86,46 @@
   "imagem": "https://th.bing.com/th/id/OIP.4xo5-nXJSBQHwyPQZkPwSAHaHa?rs=1&pid=ImgDetMain",
   "descricao": "Carregue seus dispositivos com eficiência enquanto dirige",
   "preco": "R$5,00",
-  "link": "https://mpago.la/1dJYXVn",
-  "filtro": "Carregador"
+  "filtro": "Carregador",
+  "unidades": "5 unidades disp"
 },
 
 
 {
-  "nome": "Mousepad Dragão Azul 70x30",
+  "nome": "Mousepad Dragão cinzento 60x30",
   "imagem": "https://down-br.img.susercontent.com/file/br-11134207-7r98o-m22bs2p4d5us07",
   "descricao": "Mousepad speed para amantes da precisão!",
-  "preco": "R$40,00",
-  "link": "https://mpago.la/1QYZ7AK",
-  "filtro": "Mousepad"
+  "preco": "R$35,00",
+  "filtro": "Mousepad",
+  "unidades": "2 unidades disp"
 },
 
 {
   "nome": "Mousepad Dragão japonês 60x30",
   "imagem": "https://images.kabum.com.br/produtos/fotos/sync_mirakl/503236/Mouse-Pad-Gamer-Speed-Extra-Grande-Desk-Pad-Profissional-Premium-Com-Borda-Costurada-60x30-Drag-o-Chin-s-Japon-s_1710181705_gg.jpg",
   "descricao": "Mousepad speed ideal para um setup estiloso!",
-  "preco": "R$40,00",
-  "link": "https://mpago.la/2W2zidV",
-  "filtro": "Mousepad"
+  "preco": "R$35,00",
+  "filtro": "Mousepad",
+  "unidades": "2 unidades disp"
 },
 
 {
   "nome": "Mousepad Mapa Mundi 70x30",
   "imagem": "https://cf.shopee.com.br/file/266c973dbcac4689272fd81aaa066f47",
   "descricao": "Mousepad speed para os amantes da Geografia!",
-  "preco": "R$40,00",
-  "link": "https://mpago.la/2MrMK2k",
-  "filtro": "Mousepad"
+  "preco": "R$35,00",
+  "filtro": "Mousepad",
+  "unidades": "2 unidades disp"
+},
+
+{
+  "nome": "Mousepad Dragão azul 70x30",
+  "imagem": "https://images.kabum.com.br/produtos/fotos/512041/mousepad-gamer-dazz-hybrid-deskmat-extra-grande-90cm-x-40cm-borda-costurada-kamonfear-aiakashi-62000160_1704912235_original.jpg",
+  "descricao": "Mousepad speed para amantes da precisão!",
+  "preco": "R$35,00",
+  "filtro": "Mousepad",
+  "unidades": "2 unidades disp"
 }
-
-
-
 
 
 
