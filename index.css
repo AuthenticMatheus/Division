@@ -444,7 +444,7 @@ main h1 {
  .sobre img {
   height: 200px;
   width: 200px;
-  margin-left: 880px;
+  margin-left: 720px;
  }
 
 .trampo img {
@@ -452,8 +452,7 @@ main h1 {
   flex-wrap: wrap;
   height: 400px;
   width: 400px;
-  margin-left: 200px;
-  gap: 100px;
+  margin-left: 100px;
   padding: 10px;
   border-radius: 20px;
  
